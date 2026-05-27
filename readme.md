@@ -14,3 +14,22 @@ uvicorn 的執行方式
 ```
 python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+
+```bash
+# 在專案目錄建立虛擬環境
+python3 -m venv .venv
+
+# 啟動虛擬環境
+source .venv/bin/activate
+
+# 啟動後 pip install 就不會再報錯
+pip install -r requirements.txt
+
+# 之後每次開終端機都要 
+source .venv/bin/activate
+
+#退出用 
+deactivate
+
+```
